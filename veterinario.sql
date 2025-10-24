@@ -48,6 +48,10 @@ IdTipo int primary key auto_increment,
 DescricaoTipo varchar(10) not null
 );
 
+insert into tipoAnimal(nomeTipo)
+		values("Cachorro"),("Gato"),
+        ("Pássaro"),("Cabra");
+
 create table racaAnimal(
 IdRaca int primary key auto_increment,
 IdTipo int not null,
