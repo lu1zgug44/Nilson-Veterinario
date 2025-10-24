@@ -69,6 +69,11 @@ foreign key (IdTipo) references tipoAnimal(IdTipo)
 insert into racaAnimal(IdTipo, nomeRaca)
 			values(2, "Angora"), (2, "Persa"),
             (1, "Pincher"),(1, "Vira-lata");
+            
+select * from racaAnimal
+inner join tipoAnimal;
+
+
 
 create table animal(
 IdAni int primary key auto_increment,
