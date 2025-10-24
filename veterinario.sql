@@ -17,6 +17,9 @@ select * from login;
 
 select * from login where IdLogin = 3;
 
+update login set loginUser= "", senha = "", 
+			tipo = "" where IdLogin = 3;
+
 create table Cliente(
 idCli int primary key auto_increment,
 nomeCli varchar(50) not null,
