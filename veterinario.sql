@@ -74,6 +74,8 @@ select * from racaAnimal inner join tipoAnimal;
 
 select * from racaAnimal where idraca = 1;
 
+update racaAnimal set IdTipo = 3, nomeRaca = "Hottweiler" where idraca = 3;
+
 
 
 create table animal(
