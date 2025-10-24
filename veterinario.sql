@@ -85,7 +85,7 @@ IdCli int not null,
 foreign key (IdRaca) references racaAnimal(IdRaca),
 foreign key (IdCli) references Cliente(IdCli)
 );
-
+-- insert into
 insert into animal(nomeAni, IdRaca, IdCli)
 		values("Bob",2,2),("Pingo",2,1),
         ("Marlene",1,1),("Dota",3,2);
