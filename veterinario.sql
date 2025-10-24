@@ -15,6 +15,8 @@ insert into login(loginUser, senha, tipo)
     ("Gerente","123455","Admin");
 select * from login;
 
+select * from login where IdLogin = 3;
+
 create table Cliente(
 idCli int primary key auto_increment,
 nomeCli varchar(50) not null,
