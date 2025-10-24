@@ -36,6 +36,8 @@ insert into Cliente(nomeCli, telCli, emailCli)
         
 select * from Cliente;
 
+select * from Cliente where IdCli = 2;
+
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
 DescricaoTipo varchar(10) not null
