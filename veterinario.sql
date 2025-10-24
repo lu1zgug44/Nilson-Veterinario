@@ -20,7 +20,7 @@ select * from login where IdLogin = 3;
 update login set loginUser= "colaborador", senha = "654321", 
 			tipo = "comum" where IdLogin = 3;
             
-delete from login where IdLogin = 3;
+delete from login where IdLogin = 2;
 
 create table Cliente(
 idCli int primary key auto_increment,
@@ -28,6 +28,11 @@ nomeCli varchar(50) not null,
 telCli varchar(13) not null,
 emailCli varchar(50) not null
 );
+
+insert into Cliente(nomeCli, telCli, emailCli)
+		values("Marcos","11 9123456789","marcos@gmail.com"),
+        ("Eric","13 9153456789","eric@gmail.com"),
+        ("Luiz","12 9163456789","luiz@gmail.com");
 
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
