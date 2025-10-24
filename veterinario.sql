@@ -70,8 +70,9 @@ insert into racaAnimal(IdTipo, nomeRaca)
 			values(2, "Angora"), (2, "Persa"),
             (1, "Pincher"),(1, "Vira-lata");
             
-select * from racaAnimal
-inner join tipoAnimal as t2 on IdTipo = IdTipo.t2;
+select * from racaAnimal inner join tipoAnimal;
+
+select * from racaAnimal where idraca = 1;
 
 
 
