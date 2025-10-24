@@ -93,7 +93,7 @@ insert into animal(nomeAni, IdRaca, IdCli)
 select t1.IdAni as 'Código', t2.nomeCli as 'Cliente',
 t1.nomeAni as 'Animal',
 t4.nomeTipo as 'Tipo de Animal',
-t3.nomeRaca as 'Raça'
+t3.nomeRaca as 'Raças'
 from animal as t1
 inner join Cliente as t2 on t1.IdCli = t2.IdCli
 inner join racaAnimal as t3 on t1.IdRaca = t3.IdRaca
