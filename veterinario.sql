@@ -71,7 +71,7 @@ insert into racaAnimal(IdTipo, nomeRaca)
             (1, "Pincher"),(1, "Vira-lata");
             
 select * from racaAnimal
-inner join tipoAnimal;
+inner join tipoAnimal as t2 on IdTipo = IdTipo.t2;
 
 
 
