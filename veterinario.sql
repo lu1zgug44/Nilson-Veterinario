@@ -18,6 +18,12 @@ emailCli varchar(50) not null
 
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
-DescricaoTipo varchar(10) not null,
+DescricaoTipo varchar(10) not null
+);
 
+create table racaAnimal(
+IdRaca int primary key auto_increment,
+IdTipo int not null,
+nomeRaca varchar(10) not null,
+foreign key (IdTipo) references tipoAnimal(IdTipo)
 );
