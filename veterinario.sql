@@ -87,7 +87,7 @@ foreign key (IdCli) references Cliente(IdCli)
 );
 
 insert into animal(nomeAni, IdRaca, IdCli)
-		values("Bob","2","2"),("Pingo","2","1"),
-        ("Marlene","1","1"),("Dota","3","2");
+		values("Bob",2,2),("Pingo",2,1),
+        ("Marlene",1,1),("Dota",3,2);
 
 select * from animal;
