@@ -51,6 +51,9 @@ nomeTipo varchar(10) not null
 insert into tipoAnimal(nomeTipo)
 		values("Cachorro"),("Gato"),
         ("Pássaro"),("Cabra");
+        
+select * from tipoAnimal;
+select * from tipoAnimal where IdTipo = 5;
 
 create table racaAnimal(
 IdRaca int primary key auto_increment,
@@ -64,6 +67,6 @@ IdAni int primary key auto_increment,
 nomeAni varchar(50) not null,
 IdRaca int not null,
 IdCli int not null,
-foreign key (IdTipo) references racaAnimal(IdRaca),
+foreign key (IdRaca) references racaAnimal(IdRaca),
 foreign key (IdCli) references Cliente(IdCli)
 );
