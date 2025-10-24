@@ -27,3 +27,12 @@ IdTipo int not null,
 nomeRaca varchar(10) not null,
 foreign key (IdTipo) references tipoAnimal(IdTipo)
 );
+
+create table animal(
+IdAni int primary key auto_increment,
+nomeAni varchar(50) not null,
+IdRaca int not null,
+IdCli int not null,
+foreign key (IdTipo) references racaAnimal(IdRaca),
+foreign key (IdCli) references Cliente(IdCli)
+);
