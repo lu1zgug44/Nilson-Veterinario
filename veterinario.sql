@@ -90,7 +90,11 @@ insert into animal(nomeAni, IdRaca, IdCli)
 		values("Bob",2,2),("Pingo",2,1),
         ("Marlene",1,1),("Dota",3,2);
 
-select * from animal as t1
+select t1.IdAni as 'Código', t2.nomeCli as 'Cliente',
+t1.nomeAni as 'Animal',
+t4.nomeTipo as 'Tipo de Animal',
+t3.nomeRaca as 'Raça'
+from animal as t1
 inner join Cliente as t2 on t1.IdCli = t2.IdCli
 inner join racaAnimal as t3 on t1.IdRaca = t3.IdRaca
 inner join TipoAnimal as t4 on t4.IdTipo = t3.IdTipo;
