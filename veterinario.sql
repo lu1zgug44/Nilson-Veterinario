@@ -15,3 +15,9 @@ nomeCli varchar(50) not null,
 telCli varchar(13) not null,
 emailCli varchar(50) not null
 );
+
+create table tipoAnimal(
+IdTipo int primary key auto_increment,
+DescricaoTipo varchar(10) not null,
+
+);
