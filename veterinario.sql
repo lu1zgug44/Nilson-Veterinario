@@ -86,8 +86,8 @@ foreign key (IdRaca) references racaAnimal(IdRaca),
 foreign key (IdCli) references Cliente(IdCli)
 );
 
-insert into animal(IdAni,nomeAni)
-		values(1, "Cachorro"),(2,"Gato"),
-        (3,"Pássaro"),(4,"Cabra");
+insert into animal(nomeAni, IdRaca, IdCli)
+		values("Bob","2","2"),("Pingo","2","1"),
+        ("Marlene","1","1"),("Dota","3","2");
 
 select * from animal;
