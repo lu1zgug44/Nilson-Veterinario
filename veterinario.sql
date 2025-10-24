@@ -66,7 +66,9 @@ nomeRaca varchar(10) not null,
 foreign key (IdTipo) references tipoAnimal(IdTipo)
 );
 
-insert into 
+insert into racaAnimal(IdTipo, nomeRaca)
+			values(2, "Angora"), (2, "Persa"),
+            (1, "Pincher"),(1, "Vira-lata");
 
 create table animal(
 IdAni int primary key auto_increment,
