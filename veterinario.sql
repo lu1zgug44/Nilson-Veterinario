@@ -33,6 +33,8 @@ insert into Cliente(nomeCli, telCli, emailCli)
 		values("Marcos","11 9123456789","marcos@gmail.com"),
         ("Eric","13 9153456789","eric@gmail.com"),
         ("Luiz","12 9163456789","luiz@gmail.com");
+        
+select * from Cliente;
 
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
