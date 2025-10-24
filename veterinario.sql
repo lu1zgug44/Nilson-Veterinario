@@ -38,6 +38,9 @@ select * from Cliente;
 
 select * from Cliente where IdCli = 2;
 
+update cliente set nomeCli = "Marcos", telCli = "11 9123456789", 
+emailCli = "marcos@gmail.com" where IdCli = 2;
+
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
 DescricaoTipo varchar(10) not null
