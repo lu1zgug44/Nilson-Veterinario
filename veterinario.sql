@@ -55,12 +55,18 @@ insert into tipoAnimal(nomeTipo)
 select * from tipoAnimal;
 select * from tipoAnimal where IdTipo = 5;
 
+update tipoAnimal set nomeTipo = "Iguana" where IdTipo = 5;
+
+delete from tipoAnimal where IdTipo = 4;
+
 create table racaAnimal(
 IdRaca int primary key auto_increment,
 IdTipo int not null,
 nomeRaca varchar(10) not null,
 foreign key (IdTipo) references tipoAnimal(IdTipo)
 );
+
+insert into 
 
 create table animal(
 IdAni int primary key auto_increment,
