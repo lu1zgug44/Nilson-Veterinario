@@ -53,6 +53,7 @@ insert into tipoAnimal(nomeTipo)
         ("Pássaro"),("Cabra");
         
 select * from tipoAnimal;
+
 select * from tipoAnimal where IdTipo = 5;
 
 update tipoAnimal set nomeTipo = "Iguana" where IdTipo = 5;
@@ -76,8 +77,6 @@ select * from racaAnimal where idraca = 1;
 
 update racaAnimal set IdTipo = 3, nomeRaca = "Hottweiler" where idraca = 3;
 
-
-
 create table animal(
 IdAni int primary key auto_increment,
 nomeAni varchar(50) not null,
@@ -86,3 +85,9 @@ IdCli int not null,
 foreign key (IdRaca) references racaAnimal(IdRaca),
 foreign key (IdCli) references Cliente(IdCli)
 );
+
+insert into animal(IdAni,nomeAni)
+		values(1, "Cachorro"),(2,"Gato"),
+        (3,"Pássaro"),(4,"Cabra");
+
+select * from animal;
