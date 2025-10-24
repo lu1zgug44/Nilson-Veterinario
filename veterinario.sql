@@ -45,7 +45,7 @@ delete from cliente where IdCli = 3;
 
 create table tipoAnimal(
 IdTipo int primary key auto_increment,
-DescricaoTipo varchar(10) not null
+nomeTipo varchar(10) not null
 );
 
 insert into tipoAnimal(nomeTipo)
