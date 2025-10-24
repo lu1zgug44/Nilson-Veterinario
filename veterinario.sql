@@ -12,7 +12,7 @@ tipo varchar(10) not null
 insert into login(loginUser, senha, tipo)
 	values("Admin","123456","Admin"),
     ("Colaborador","654321","comum"),
-    ("Gerente","123457","Admin");
+    ("Gerente","123455","Admin");
 select * from login;
 
 create table Cliente(
